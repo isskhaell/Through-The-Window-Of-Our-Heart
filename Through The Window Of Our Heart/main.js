@@ -1,6 +1,7 @@
 const button = document.getElementById('btn'),
     content = document.getElementById('text');
 
+//the lines that will show on the cards
 button.onclick = function() {
     var text = [
       "What do you think is the hardest part of living?",
@@ -28,6 +29,8 @@ button.onclick = function() {
       "Were you more attracted to their potential or who they really were? explain.",
       "What's the hardest part about dating you?"
     ];
+    
+    //will throw one of the lines randomly
   
     const randomItem = text[Math.floor(Math.random()*text.length)];
 
